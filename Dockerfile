@@ -1,4 +1,4 @@
-FROM  anasty17/mltb:latest
+FROM  beniwal20/b3ni1:latest
 # FROM anasty17/mltb:latest
 
 WORKDIR /usr/src/app
