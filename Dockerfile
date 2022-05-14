@@ -1,5 +1,5 @@
-FROM  sourabhbeni/b3ni:latest
-# FROM anasty17/mltb-oracle:latest
+FROM  sourabhbeni/testbot:latest
+# FROM sourabhbeni/testbot-oracle:latest
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
