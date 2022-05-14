@@ -1,5 +1,4 @@
 FROM  beniwal20/b3ni1:latest
-# FROM sourabhbeni/testbot-oracle:latest
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
