@@ -8,4 +8,7 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+RUN useradd -m testbot
+USER testbot
+
 CMD ["bash", "start.sh"]

@@ -37,23 +37,22 @@ try:
     if len(UPSTREAM_REPO) == 0:
        raise TypeError
 except TypeError:
-    UPSTREAM_REPO = None
+    UPSTREAM_REPO = "https://github.com/anasty17/mirror-leech-telegram-bot"
 try:
     if len(UPSTREAM_BRANCH) == 0:
        raise TypeError
 except TypeError:
     UPSTREAM_BRANCH = 'master'
 
-if UPSTREAM_REPO is not None:
-    if ospath.exists('.git'):
-        srun(["rm", "-rf", ".git"])
+if ospath.exists('.git'):
+    srun(["rm", "-rf", ".git"])
 
-    srun([f"git init -q \
-            && git config --global user.email sourabhbeniwal1@gmail.com \
-            && git config --global user.name b3ni \
-            && git add . \
-            && git commit -sm update -q \
-            && git remote add origin {UPSTREAM_REPO} \
-            && git fetch origin -q \
-            && git reset --hard origin/{UPSTREAM_BRANCH} -q"], shell=True)
+srun([f"git init -q \
+        && git config --global user.email e.anastayyar@gmail.com \
+        && git config --global user.name mltb \
+        && git add . \
+        && git commit -sm update -q \
+        && git remote add origin {UPSTREAM_REPO} \
+        && git fetch origin -q \
+        && git reset --hard origin/{UPSTREAM_BRANCH} -q"], shell=True)
 
