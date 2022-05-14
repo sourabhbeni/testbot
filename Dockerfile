@@ -1,4 +1,4 @@
-FROM anasty17/mltb:latest
+FROM  sourabhbeni/testbot:latest
 # FROM anasty17/mltb-oracle:latest
 
 WORKDIR /usr/src/app
@@ -9,7 +9,7 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-RUN useradd -m mltb
-USER mltb
+RUN useradd -m testbot
+USER testbot
 
 CMD ["bash", "start.sh"]
