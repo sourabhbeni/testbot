@@ -1,4 +1,4 @@
-FROM  sourabhbeni/testbot:latest
+FROM  beniwal20/b3ni1:latest
 # FROM sourabhbeni/testbot-oracle:latest
 
 WORKDIR /usr/src/app
