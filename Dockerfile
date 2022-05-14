@@ -1,4 +1,4 @@
-FROM  sourabhbeni/testbot:latest
+FROM  anasty17/mltb:latest
 # FROM anasty17/mltb:latest
 
 WORKDIR /usr/src/app
